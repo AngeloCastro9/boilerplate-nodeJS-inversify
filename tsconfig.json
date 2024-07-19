@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig-base.json",
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tests",
+    "docs",
+    "commitlint.config.js",
+    "vitest.config.ts",
+    "coverage"
+  ]
+}

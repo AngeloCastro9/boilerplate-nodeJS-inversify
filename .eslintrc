@@ -1,0 +1,189 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "no-console": "warn",
+    "no-unused-vars": [
+      "error", {
+        "args": "none"
+      }
+    ],
+    "no-unused-expressions": ["error", { "allowTernary": true }],
+    "no-useless-concat": "error",
+    "no-useless-return": "error",
+    "block-spacing": "error",
+    "keyword-spacing": "error",
+    "no-tabs": "error",
+    "no-unneeded-ternary": "error",
+    "no-whitespace-before-property": "error",
+    "quote-props": ["error", "consistent"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "semi-spacing": "error",
+    "space-before-blocks": "error",
+    "space-before-function-paren": "error",
+    "space-in-parens": "error",
+    "space-infix-ops": "error",
+    "space-unary-ops": "error",
+    "arrow-spacing": "error",
+    "no-confusing-arrow": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "prefer-template": "error",
+    "variable-name": 0,
+    "import-name": 0,
+    "no-param-reassign": "off",
+    "no-trailing-spaces": "error",
+    "prefer-const": "warn",
+    "no-duplicate-case": "warn",
+    "no-await-in-loop": "warn",
+    "no-continue": "warn",
+    "prefer-destructuring": "warn",
+    "object-curly-spacing": ["error", "always"],
+    "rest-spread-spacing": ["error"],
+    "key-spacing": ["error"],
+    "comma-spacing": ["error"],
+    "no-multi-spaces": "error",
+    "max-len": [
+      "warn",
+      120,
+      2,
+      {
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true
+      }
+    ],
+    "array-bracket-spacing": ["error", "always"],
+    "linebreak-style": [
+      "warn",
+      "unix"
+    ],
+    "@typescript-eslint/array-type": [
+      2,
+      {"array-type": "generic"}
+    ],
+    "@typescript-eslint/indent": [
+      0,
+      2
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "MemberExpression": 1,
+        "SwitchCase": 1
+      }
+    ],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": ["if", "for", "while", "block-like", "block"], "next": "*" },
+      { "blankLine": "always", "prev": "*", "next": ["if", "for", "while", "block-like", "block"]}
+    ],
+    "no-duplicate-imports": 2,
+    "@typescript-eslint/semi": [
+      2,
+      "always"
+    ],
+    "@typescript-eslint/quotes": [2, "single"],
+    "sort-imports": [
+      "error",
+      {
+          "ignoreCase": true,
+          "ignoreDeclarationSort": true,
+          "ignoreMemberSort": false,
+          "memberSyntaxSortOrder": [
+              "none",
+              "all",
+              "multiple",
+              "single"
+          ],
+          "allowSeparatedGroups": true
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+          "selector": "interface",
+          "format": [
+              "PascalCase"
+          ]
+      }
+    ],
+    "@typescript-eslint/typedef": [
+      2,
+      {
+          "typedef": [
+              "arrow-call-signature",
+              "arrow-parameter",
+              "call-signature",
+              "member-variable-declaration",
+              "parameter",
+              "property-declaration",
+              "variable-declaration"
+          ]
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "module",
+          "/^@src/",
+          "/^@core/",
+          "/^@modules/",
+          "/^@shared/",
+          "/^@tests/"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 1,
+        "maxBOF": 0
+      }
+    ],
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never"
+    }]
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "eslint-plugin-import-helpers",
+    "import"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": [
+          "./tsconfig.json",
+          "./tsconfig-base.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,2 @@
+export { IResetPasswordUseCase } from '@modules/auth/use-cases/reset-password/reset-password.interface';
+export { ResetPasswordUseCase } from '@modules/auth/use-cases/reset-password/reset-password.usecase';

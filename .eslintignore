@@ -1,0 +1,6 @@
+node_modules
+dist
+commitlint.config.js
+vitest.config.ts
+docs
+.prettierrc

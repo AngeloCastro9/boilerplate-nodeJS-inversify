@@ -1,0 +1,1 @@
+export { UserRepositoryInMemory, getUserMatchCondition, getUserMatchSearch } from '@tests/repositories/user';

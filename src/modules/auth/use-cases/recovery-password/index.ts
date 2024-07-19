@@ -1,0 +1,2 @@
+export { IRecoveryPasswordUseCase } from '@modules/auth/use-cases/recovery-password/recovery-password.interface';
+export { RecoveryPasswordUseCase } from '@modules/auth/use-cases/recovery-password/recovery-password.usecase';

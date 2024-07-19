@@ -1,0 +1,2 @@
+export { IAuthCredentialsRepository } from '@core/db/repositories/auth-credentials/auth-credentials.interface';
+export { AuthCredentialsRepository } from '@core/db/repositories/auth-credentials/auth-credentials.repository';
